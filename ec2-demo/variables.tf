@@ -21,6 +21,9 @@
     default ="terraform-key" 
     sensitive = true
  }
+
+variable "AWS_ACCESS_KEY"{}
+variable "AWS_SECRET_KEY"{} 
     
   /*  #AWS EC2 Instance Type -list 
     variable "instance_type_list" { 
