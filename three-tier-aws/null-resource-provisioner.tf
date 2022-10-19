@@ -7,12 +7,12 @@ resource "null_resource" "name" {
     host     = module.ec2_public.public_ip   
     user     = "ec2-user"
     password = ""
-    private_key = file("/Users/joemile/Downloads/terraform-key.pem")
+    private_key = file("private-key/terraform-key.pem")
   }  
 
 ## File Provisioner: Copies the terraform-key.pem file to /tmp/terraform-key.pem
   provisioner "file" {
-    source      = "/Users/joemile/Downloads/terraform-key.pem"
+    source      = "private-key/terraform-key.pem"
     destination = "/tmp/terraform-key.pem"
   }
 ## Remote Exec Provisioner: Using remote-exec provisioner fix the private key permissions on Bastion Host
