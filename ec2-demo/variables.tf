@@ -22,14 +22,15 @@
     sensitive = true
  }
     
-    #AWS EC2 Instance Type -list 
+  /*  #AWS EC2 Instance Type -list 
     variable "instance_type_list" { 
       description = "Ec2 Instance Type"
       type = list(string)
       default = [ "t1.micro","t2.micro","t3.micro" ]
     }
-
-    #AWS Ec2 Instance Type - Map
+  */
+   
+   /* #AWS Ec2 Instance Type - Map
     variable "instance_type_map" {
       description = "EC2 Instance Type"
       type = map(string)
@@ -38,4 +39,5 @@
          "qa" = "t3.small"
          "prod" = "t3.large"
       }
+     */
     }
