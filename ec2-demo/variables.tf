@@ -18,7 +18,7 @@
  variable "instance_keypair" {
     description = "AWS EC2 key pair for ssh access"
     type = string
-    default ="terraform-key" 
+    default ="demo-kp" 
     sensitive = true
  }
 
